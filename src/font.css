@@ -1,0 +1,46 @@
+.heebo{
+    font-family: 'heebo', sans-serif;
+    font-weight: 800;
+}
+.poppins-300{
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+}
+.poppins-400{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+}
+.poppins-500{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+.poppins-700{
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+nav a:hover, a:hover{
+    color: #212121;
+    transition: all 0.4s ease;
+
+}
+nav a, a{
+    position: relative;
+    transition: all 0.4s ease;
+}
+nav a:hover::after, a:hover::after{
+    height:50%;
+    transition: all 0.4s ease;
+}
+nav a::after, a::after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 5%;
+    left: 0;
+    bottom: 0;
+    background-color: #818CF8;
+    transition: all 0.4s ease;
+
+}
