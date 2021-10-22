@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">MY GALLERY</h1>
+<h1 align="center">Edie homepage</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -12,11 +12,11 @@
       ~
     </a>
    <span> | <span>
-      <a href="https://devchallenges.io/solutions/sBACGAVvgcr9Tzq3KWEU">
+      <a href="https://devchallenges.io/solutions/9tTXuXIcdkAll0nopMxi">
          solution
       </a>
    <span> | <span>
-    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
+    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
       Challenge
     </a>
   </h3>
@@ -35,7 +35,7 @@
 <!-- OVERVIEW -->
 
 ## Overview
-
+<img src="screely-1634898643261.png">
 
 
 
