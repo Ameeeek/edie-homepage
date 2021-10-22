@@ -11,27 +11,74 @@
   <title>Document</title>
   <link rel="stylesheet" href="../src/font.css">
   <link rel="stylesheet" href="../src/styled.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+      integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+      crossorigin="anonymous"
+    />
 </head>
 <body>
-  <nav class="flex justify-between p-4">
+  <header class="flex justify-between p-4">
     <div class="logo">
       <h3 class="heebo text-black text-4xl">Edie</h3>
     </div>
-    <div class="nav-links poppins-500 mr-5">
-      <a href="#" class="mx-4">Home</a>
-      <a href="#" class="mx-4">Services</a>
-      <a href="#" class="mx-4">Our Works</a>
-      <a href="#" class="mx-4">Clients</a>
-      <a href="#" class="mx-4">Contact</a>
-    </div>
-  </nav>
+    <nav class=" p-3 flex-wrap">
+      <button
+        class="text-black inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto  outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <i class="material-icons">menu</i>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+        >
+          <a
+            href="#home"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center  hover:text-primary poppins-500 "
+          >
+            <span>Home</span>
+          </a>
+          <a
+            href="#services"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center  hover:text-primary poppins-500 "
+          >
+            <span>Services</span>
+          </a>
+          <a
+            href="#ourwork"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center  hover:text-primary poppins-500 "
+          >
+            <span>Our Works</span>
+          </a>
+          <a
+            href="#clients"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center  hover:text-primary poppins-500 "
+          >
+            <span>Clients</span>
+          </a>
+          <a
+            href="#contact"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center  hover:text-primary poppins-500 "
+          >
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
   <main>
-    <div class="pretitle p-28">
-      <h5 class="text-sm poppins-500 text-indigo-800">unhappy with your website?</h5>
-      <h3 class="text-primary poppins-500 text-5xl">We create beautiful <br> and fast web servies</h3>
+    <div class="pretitle p-28" id="home">
+      <h5 class="text-sm poppins-500  text-indigo-800">unhappy with your website?</h5>
+      <h3 class="text-primary poppins-500 text-5xl hp:text-2xl">We create beautiful <br> and fast web servies</h3>
     </div>
     <div class="hero flex justify-center ">
-      <img class="w-full rounded-3xl" src="heroImage.jpg">
+      <img class="w-full hp:w-screen rounded-3xl" src="heroImage.jpg">
     </div>
     <div class="title p-28">
       <h3 class="text-primary poppins-500 text-5xl mb-8">story, emotion <br> and purpose</h3>
@@ -43,9 +90,9 @@
       </div>
     </div>
 
-    <div class="offers p-20">
+    <div class="offers p-20" id="services">
       <h3 class="text-black poppins-500 text-4xl"> we offer high<br> demand services</h3>
-      <div class="cards-group flex justify-center my-10 ">
+      <div class="cards-group flex hp:flex hp:flex-col justify-center my-10 ">
         <div class="cards mx-auto">
           <div class="cards-icon">
             <i class="fas fa-pen-square text-7xl text-blue-500"></i>
@@ -53,7 +100,7 @@
           <cards-content >
             <h4 class="poppins-700 text-2xl">UI/UX Design</h4>
             <h6 class="w-72 text-gray-500 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</h6>
-            <button class="text-base p-4 hover:bg-blue-500 ease-linear text-gray-900 duration-200 my-4 rounded-2xl hover:text-white poppins-500 "> get started</button>
+            <button class="text-base p-4 hover:bg-indigo-500 ease-linear text-gray-900 duration-200 my-4 rounded-2xl hover:text-white poppins-500 "> get started</button>
           </cards-content>
         </div>
         <div class="cards mx-auto">
@@ -63,7 +110,7 @@
           <cards-content >
             <h4 class="poppins-700 text-2xl">Front end</h4>
             <h6 class="w-72 text-gray-500 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</h6>
-            <button class="text-base p-4 hover:bg-green-500 text-gray-900 ease-linear duration-200 my-4 rounded-2xl poppins-500 hover:text-white"> get started</button>
+            <button class="text-base p-4 hover:bg-indigo-500 text-gray-900 ease-linear duration-200 my-4 rounded-2xl poppins-500 hover:text-white"> get started</button>
           </cards-content>
         </div>
         <div class="cards mx-auto">
@@ -73,11 +120,133 @@
           <cards-content >
             <h4 class="poppins-700 text-2xl">Back end</h4>
             <h6 class="w-72 text-gray-500 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</h6>
-            <button class="text-base p-4 hover:bg-yellow-400 text-gray-900 ease-linear duration-200 my-4 rounded-2xl poppins-500 hover:text-white"> get started</button>
+            <button class="text-base p-4 hover:bg-indigo-400 text-gray-900 ease-linear duration-200 my-4 rounded-2xl poppins-500 hover:text-white"> get started</button>
           </cards-content>
         </div>
       </div>
     </div>
+
+
+
+    <div class="ourwork p-20" id="ourwork">
+      <h3 class="text-black poppins-500 text-4xl"> Good design means<br> good business</h3>
+      <div class="gallery-container">
+
+        <div class="gallery flex justify-between">
+          <div class="right mt-36">
+            <div class="gallery-cards">
+              <div class="gallery-images">
+                <img src="smarthome.jpg">
+              </div>
+              <div class="gallery-text">
+                <p class="text-gray-400 text-sm poppins-500 mt-4">Fullstack application</p>
+                <h4 class="text-primary text-2xl mt-4 poppins-500">Smarthome Dashboard</h4>
+              </div>
+            </div>
+            <div class="gallery-cards">
+              <div class="gallery-images">
+                <img src="booking.png">
+              </div>
+              <div class="gallery-text">
+                <p class="text-gray-400 text-sm poppins-500 mt-4">Mobile application</p>
+                <h4 class="text-primary text-2xl mt-4 poppins-500">Booking system</h4>
+              </div>
+            </div>
+          </div>
+          <div class="left mt-20">
+            <div class="gallery-cards">
+              <div class="gallery-images">
+                <img src="onboard.png">
+              </div>
+              <div class="gallery-text">
+                <p class="text-gray-400 text-sm poppins-500 mt-4">UI/UX Design</p>
+                <h4 class="text-primary text-2xl mt-4 poppins-500">OnBoard Aplication</h4>
+              </div>
+            </div>
+            <div class="gallery-cards">
+              <div class="gallery-images">
+                <img src="juice-product.png">
+              </div>
+              <div class="gallery-text">
+                <p class="text-gray-400 text-sm poppins-500 mt-4">Frontend Aplication</p>
+                <h4 class="text-primary text-2xl mt-4 poppins-500">Juice product homepage</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="text-2xl text-indigo-500 flex flex-end"> see more </a>
+      </div>
+    </div>
+
+    <div class="meet-the-team p-20">
+      <div class="meet-the-team-container flex justify-between">
+        <div class="meet-the-team-text w-72 mt-24">
+          <p class="poppins-500 text-sm text-red-600">meet the team</p>
+          <h3 class="poppins-500 text-4xl">We are chilled and a laidback team</h3>
+          <p class="poppins-500 text-base text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="meet-the-team-images flex gap-2 ">
+          <div class="right">
+            <img class="rounded-3xl mt-24 h-56 w-60" src="person1.png">
+          </div>
+          <div class="left gap-2 ">
+            <img  class="rounded-3xl mb-12 w-56 h-60"  src="person2.png">
+            <img class="rounded-3xl w-56 h-60"   src="person3.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="clients p-20" id="clients">
+      <h3 class="text-4xl text-primary poppins-500  max-w-4xl">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”    </h3>
+      <div class="clients-profile flex">
+        <div class="clients-profilePicture w-24 mt-8 h-24">
+          <img class="rounded-2xl" src="person4.png">
+        </div>
+        <div class="clients-profilePictureInfo mt-10 ml-4">
+          <h3 class="poppins-500 text-xl text-primary">Carlos tan</h3>
+          <h3 class="poppins-500 text-lg text-gray-400"> The Decorate Gatsby</h3>
+        </div>
+      </div>
+    </div>
+
   </main>
+  <footer class="bg-indigo-700" id="contact">
+    <div class="footer-items p-20 flex justify-between">
+      <div class="footer-links flex flex-col text-lg text-white poppins-500">
+        <a href="#">Home</a>
+        <a href="#">Our works</a>
+        <a href="#">services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="eddie">
+        <p class="heebo text-white text-2xl">Eddie</p>
+        <div class="eddie-links flex ">
+          <a href="#"><img class="mr-2" src="./twitter.svg"></a>
+          <a href="#"><img  class="mr-2" src="./instagram.svg"></a>
+          <a href="#"><img  class="mr-2" src="./linkedin.svg"></a>
+        </div>
+      </div>
+      <div class="subcribe">
+        <p class="poppins-500 text-sm text-white">want us to contact you?</p>
+        <div class="CTA bg-white my-4">
+            <input class="text-lg poppins-500  text-gray-400" type="text" placeholder="email">
+            <button type="submit" class="bg-blue-400 p-2 text-white" >Join</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
 </body>
 </html>
+
+

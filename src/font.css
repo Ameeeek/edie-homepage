@@ -19,20 +19,20 @@
     font-weight: 700;
 }
 
-nav a:hover, a:hover{
+nav a:hover {
     color: #212121;
     transition: all 0.4s ease;
 
 }
-nav a, a{
+nav a{
     position: relative;
     transition: all 0.4s ease;
 }
-nav a:hover::after, a:hover::after{
+nav a:hover::after{
     height:50%;
     transition: all 0.4s ease;
 }
-nav a::after, a::after {
+nav a::after {
     content:"";
     position: absolute;
     z-index: -1;
@@ -44,3 +44,22 @@ nav a::after, a::after {
     transition: all 0.4s ease;
 
 }
+
+nav .openMenu{
+    display:none;
+    cursor:pointer;
+    font-size: 2rem;
+    margin: 20px;
+}
+nav .mainMenu .closeMenu{
+    display:none;
+    cursor:pointer;
+    font-size: 2rem;
+}
+@media (min-width: 858px) {
+    .top-navbar {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+    }
+  }

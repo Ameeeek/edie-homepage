@@ -6,6 +6,9 @@ module.exports = {
       colors:{
         primary: '#212121',
       },
+      screens: {
+        'hp':{'max': '858px'},
+      }
     },
   },
   variants: {
